@@ -1,5 +1,5 @@
 .card {
-    border: 2px solid grey;
+    border: 3px solid rgb(178, 177, 177);
     margin: 0 auto;
     margin-bottom: 35px;
     position: relative;
@@ -7,7 +7,7 @@
 }
 
 .card__wrapper {
-    padding: 50px;
+    padding: 50px 20px 30px 20px;
     display: flex;
 }
 
@@ -49,7 +49,7 @@
     margin-right: 80px;
     max-width: 100%;
     height: auto;
-
+    border-radius: 150px;
 
 }
 

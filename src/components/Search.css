@@ -1,0 +1,39 @@
+.search__input {
+    width: 300px;
+    border-radius: 10px;
+    padding-left: 35px;
+    font-size: 20px;
+    height: 45px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+
+}
+
+.search__wrapper {
+    position: relative;
+}
+
+.popup__svg-search {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25%;
+    left: 5px;
+    opacity: .5;
+}
+
+
+
+.popup__svg-close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25%;
+
+}

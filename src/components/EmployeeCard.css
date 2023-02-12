@@ -1,0 +1,114 @@
+.card {
+    border: 2px solid grey;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.card__wrapper {
+    padding: 50px;
+    display: flex;
+}
+
+.card__info {
+    font-size: 20px;
+    padding: 2px 5px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card__info-title {
+    display: block;
+    width: 200px;
+    float: left;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.card__info-values {
+    display: block;
+    margin-left: 125px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: grey;
+    font-weight: 600;
+
+}
+
+.employee__img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    margin-right: 80px;
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+.employee-right__wrapper {
+    margin-bottom: 30px;
+}
+
+.employee-right__wrapper:after {
+    margin-top: 30px;
+    content: '';
+    background-color: black;
+    height: 1px;
+    display: block;
+}
+
+.card__name {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.employee-top {}
+
+.card__job-title {
+    display: flex;
+    font-size: 30px;
+    color: grey;
+    align-items: center;
+}
+
+.card__job-name {
+    margin-right: 50px;
+}
+
+.card__plus-svg {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.card__job-popup {
+    width: 600px;
+    height: 300px;
+    z-index: 10;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 25%;
+    padding: 30px;
+
+}
+
+.popup__svg-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}

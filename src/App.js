@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
+import EmployeeCard from "./components/EmployeeCard";
 
 function App() {
+  const [items, setItems] = React.useState([]);
+  React.useEffect(() => {
+    fetch("https://63e79c82ac3920ad5be0b369.mockapi.io/project")
+      .then((res) => {
+        return res.json();
+      })
+      .then((arr) => {
+        setItems(arr);
+      });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div>
+          <input type="text" />
+        </div>
+        {items.map((obj) => (
+          <EmployeeCard key={obj.id} {...obj} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import React from "react";
 import style from "./Search.css";
 
 const Search = ({ searchValue, setSearchValue }) => {
+  
   return (
     <div className="search">
       <div className="search__wrapper">

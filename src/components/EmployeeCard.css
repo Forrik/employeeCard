@@ -81,6 +81,18 @@
 
 .card__job-name {
     margin-right: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.card__job-name:hover {
+    color: black;
+    transition: color .5s ease;
 }
 
 .card__plus-svg {
@@ -111,4 +123,14 @@
     top: 0;
     right: 10px;
     cursor: pointer;
+}
+
+.job-list {
+    list-style: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.job-list .active {
+    font-size: 30px;
 }

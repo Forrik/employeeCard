@@ -3,6 +3,22 @@ import style from "./EmployeeCard.css";
 
 function EmployeeCard(props) {
   const [visible, setVisible] = React.useState(false);
+  const jobList = [
+    'Лаборант',
+    'Старший лаборант',
+    'Ассистент',
+    'Преподаватель',
+    'Старший преподаватель',
+    'Доцент',
+    'Профессор', 
+  ]
+  
+
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const onClickJobList = (id) => {
+    setActiveIndex(id);
+    setVisible(false);
+  }
 
   const onClickVisible = () => {
     setVisible(true);
@@ -24,9 +40,9 @@ function EmployeeCard(props) {
           <div className="employee-right__wrapper">
             <p className="card__name">{props.name}</p>
             <div className="card__job-title">
-              <p className="card__job-name">Должность: {props.jobTitle}</p>
+              <p  onClick={() => setVisible(!visible)} className="card__job-name">Должность: {jobList[activeIndex]}</p>
               <svg
-                onClick={onClickVisible}
+               onClick={() => setVisible(!visible)}
                 className="card__plus-svg"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -78,6 +94,16 @@ function EmployeeCard(props) {
                   fill="#000000"
                 />
               </svg>
+              <ul>
+              {jobList.map((name, id) => (
+                  <li
+                  key={id}
+                  onClick={() => onClickJobList(id)}
+                  className={activeIndex === id? 'job-list active' : 'job-list'}>
+                  {name}
+                  </li>
+                ))}
+            </ul>
               <p className="card__info">Должность: {props.jobTitle}</p>
               <p className="card__info">с:{props.firstDate}</p>
               <p className="card__info">по:{props.lastDate}</p>

@@ -129,8 +129,29 @@
     list-style: none;
     font-weight: 600;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.job-list:hover {
+    background-color: gray;
+    color: white;
 }
 
 .job-list .active {
     font-size: 30px;
+    background-color: grey;
+}
+
+.jobList__popup {
+    background-color: #fff;
+    position: absolute;
+
+   width: 500px;
+   align-items: center;
+}
+
+.employee-left {
+    padding: 0;
 }

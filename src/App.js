@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import EmployeeCard from "./components/EmployeeCard";
-import Search from "./components/Search";
+import EmployeeCard from "./components/EmployeeCard/EmployeeCard.jsx";
+import Search from "./components/Search/Search.jsx";
 
 function App() {
   const [searchValue, setSearchValue] = React.useState("");

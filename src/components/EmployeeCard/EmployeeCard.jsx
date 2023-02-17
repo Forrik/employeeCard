@@ -141,8 +141,7 @@ function EmployeeCard(props) {
                   ))}
                 </ul></>
               )}
-              <ul>
-              
+              <ul className="jobInfo__popup"> 
                 <li className="card__info popup">
                   Должность: {jobList[activeIndex]}
                 </li>

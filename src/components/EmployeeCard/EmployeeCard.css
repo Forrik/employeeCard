@@ -1,9 +1,11 @@
 .card {
-    border: 3px solid rgb(178, 177, 177);
+ 
     margin: 0 auto;
     margin-bottom: 35px;
     position: relative;
-    border-radius: 15px;
+   
+    width: 1000px;
+    height: 310px;
 }
 
 .card__wrapper {
@@ -52,8 +54,17 @@
 }
 
 .card__info-btn {
-    
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
     margin: 0 auto;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card__info-btn:hover {
+    background-color: grey;
+    color: white;
 }
 
 .employee__img {
@@ -137,6 +148,7 @@
     top: 0;
     right: 0px;
     cursor: pointer;
+    z-index: 11;
 }
 
 .popup__svg-back {
@@ -146,6 +158,7 @@
     top: 0;
     right: 40px;
     cursor: pointer;
+    z-index: 11;
 }
 
 .job-list {
@@ -155,6 +168,7 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
+
 }
 
 .job-list:hover {
@@ -168,6 +182,7 @@
 }
 
 .jobList__popup {
+    padding: 40px !important;
     background-color: #fff;
     position: absolute;
     border: 1px solid black;
@@ -177,6 +192,11 @@
    height: 300px;
    align-items: center;
 
+}
+
+.jobInfo__popup {
+    padding: 0 0 20px 0 !important;
+ 
 }
 
 .employee-left {
